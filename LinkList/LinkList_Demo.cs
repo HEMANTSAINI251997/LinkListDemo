@@ -43,6 +43,19 @@ namespace LinkList
                 temp = temp.next;
             }
         }
-        
+        public void Reverse_Order(int data)
+        {
+            Node node = new Node(data);
+            if(head== null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                head = node;
+                head.next = temp;
+            }
+        }
     }
 }
