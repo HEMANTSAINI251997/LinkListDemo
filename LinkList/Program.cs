@@ -37,6 +37,7 @@ namespace LinkList
                         linklistdemo.Add(4);
                         linklistdemo.Add(10);
                         linklistdemo.Add(20);
+                        linklistdemo.Display();
 
                         break;
                     default:

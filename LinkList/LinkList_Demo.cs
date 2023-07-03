@@ -30,6 +30,19 @@ namespace LinkList
             }
             Console.WriteLine("Link List data = " + data);
         }
+        public void Display()
+        {
+            Node temp = head;
+            if (temp == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            while(temp != null) 
+            {
+                Console.WriteLine(temp.data);
+                temp = temp.next;
+            }
+        }
         
     }
 }
