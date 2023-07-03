@@ -57,5 +57,14 @@ namespace LinkList
                 head.next = temp;
             }
         }
+        public void RemoveFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            head = head.next;
+            Console.WriteLine("First Node Deleted Successfully");
+        }
     }
 }
