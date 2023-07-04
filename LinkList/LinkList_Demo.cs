@@ -88,6 +88,23 @@ namespace LinkList
                 Console.WriteLine("Remove Last element");
 
             }
+
+        }
+        public void LinkeedSize()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("List is Empty Size = 0");
+            }
+            Node temp = head;
+            int count = 1;
+            while( temp.next != null)
+            {
+                count++;
+                temp = temp.next;
+               
+            }
+            Console.WriteLine("Size of Linkes List = " + count);
         }
     }
 }

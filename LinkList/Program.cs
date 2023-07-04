@@ -23,6 +23,7 @@ namespace LinkList
                 Console.WriteLine("4. Reverse the order");
                 Console.WriteLine("5. Remove First Node");
                 Console.WriteLine("6. Remove Last Node");
+                Console.WriteLine("7. CALC Size of Linked List");
                 Console.WriteLine("Enter The Number");
                 int num = Convert.ToInt32(Console.ReadLine());
               
@@ -60,8 +61,9 @@ namespace LinkList
                         linklistdemo.RemoveLast();
                         linklistdemo.Display();
                         break;
-
-
+                    case 7:
+                        linklistdemo.LinkeedSize();
+                        break;
                     default:
                         Console.WriteLine("Enter correct option");
                         break;
