@@ -22,6 +22,7 @@ namespace LinkList
                 Console.WriteLine("3 link list node");
                 Console.WriteLine("4. Reverse the order");
                 Console.WriteLine("5. Remove First Node");
+                Console.WriteLine("6. Remove Last Node");
                 Console.WriteLine("Enter The Number");
                 int num = Convert.ToInt32(Console.ReadLine());
               
@@ -55,6 +56,11 @@ namespace LinkList
                         linklistdemo.RemoveFirst();
                         linklistdemo.Display();
                         break;
+                    case 6:
+                        linklistdemo.RemoveLast();
+                        linklistdemo.Display();
+                        break;
+
 
                     default:
                         Console.WriteLine("Enter correct option");

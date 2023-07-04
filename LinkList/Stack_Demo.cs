@@ -16,7 +16,7 @@ namespace LinkList
             stack.Push("HEMANT");
             stack.Push(25);
             stack.Push(2.55);
-            stack.Push('H');
+            stack.Push('H'); // last element
             foreach(var item in stack) 
             {
                 Console.WriteLine("ALL elments = " + item);

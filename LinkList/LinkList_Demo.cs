@@ -46,7 +46,7 @@ namespace LinkList
         public void Reverse_Order(int data)
         {
             Node node = new Node(data);
-            if(head== null)
+            if(head==null)
             {
                 head = node;
             }
@@ -65,6 +65,29 @@ namespace LinkList
             }
             head = head.next;
             Console.WriteLine("First Node Deleted Successfully");
+        }
+        public void RemoveLast()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            
+            if(head.next == null)
+            {
+                Console.WriteLine("The next element of head is null");
+            }
+            else
+            {
+                Node temp = head;
+                while(temp.next.next!= null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+                Console.WriteLine("Remove Last element");
+
+            }
         }
     }
 }
