@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LinkList
@@ -105,6 +106,26 @@ namespace LinkList
                
             }
             Console.WriteLine("Size of Linkes List = " + count);
+        }
+        public int Search(int value)
+        {
+            Node node = head;
+            if (node == null)
+            {
+                return -1;
+            }
+            int count = 0;
+            while (node != null)
+            {
+                if (node.data == value)
+                {
+                    return count;
+                }
+                node = node.next;
+                count++;
+            }
+            return count;
+
         }
     }
 }
