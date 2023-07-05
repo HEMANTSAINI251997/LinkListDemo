@@ -13,6 +13,7 @@ namespace LinkList
         static void Main(string[] args)
         {
             LinkList_Demo linklistdemo = new LinkList_Demo();
+            LinkedListStack linkliststack  = new LinkedListStack();
             bool flag = true;
            
             while (flag)
@@ -25,6 +26,7 @@ namespace LinkList
                 Console.WriteLine("6. Remove Last Node");
                 Console.WriteLine("7. CALC Size of Linked List");
                 Console.WriteLine("8. Searching the element ");
+                Console.WriteLine("9. Insert data in stack");
                 Console.WriteLine("Enter The Number");
                 int num = Convert.ToInt32(Console.ReadLine());
               
@@ -69,6 +71,13 @@ namespace LinkList
                         int val = linklistdemo.Search(10);
                         Console.WriteLine("POSITION = "+ val);
                         break;
+                    case 9:
+                        linkliststack.Push(55);
+                        linkliststack.Push(25);
+                        linkliststack.Push(5);
+                        linkliststack.Display();
+                        break;
+
                     default:
                         Console.WriteLine("Enter correct option");
                         break;
