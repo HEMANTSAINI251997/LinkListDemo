@@ -32,6 +32,26 @@ namespace LinkList
                 temp = temp.next;
             }
         }
+        public void Peek() 
+        {
+            if (top == null)
+            {
+                Console.WriteLine("STACK IS EMPTY");
+                 return;
+            }
+            Console.WriteLine("top element is = "+top.data);
+        }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("STACK IS EMPTY");
+                return;
+            }
+            Console.WriteLine("Deleted element = " + top.data);
+            top = top.next;
+
+        }
 
               
             

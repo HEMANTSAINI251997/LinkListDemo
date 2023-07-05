@@ -75,6 +75,13 @@ namespace LinkList
                         linkliststack.Push(55);
                         linkliststack.Push(25);
                         linkliststack.Push(5);
+                        Console.WriteLine("...................");
+                        linkliststack.Display();
+                        Console.WriteLine("...................");
+                        linkliststack.Peek();
+                        Console.WriteLine("...................");
+                        linkliststack.Pop();
+                        Console.WriteLine("...................");
                         linkliststack.Display();
                         break;
 
