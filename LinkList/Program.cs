@@ -14,6 +14,7 @@ namespace LinkList
         {
             LinkList_Demo linklistdemo = new LinkList_Demo();
             LinkedListStack linkliststack  = new LinkedListStack();
+            LinkedListQueue linklistqueue = new LinkedListQueue();
             bool flag = true;
            
             while (flag)
@@ -27,6 +28,7 @@ namespace LinkList
                 Console.WriteLine("7. CALC Size of Linked List");
                 Console.WriteLine("8. Searching the element ");
                 Console.WriteLine("9. Insert data in stack");
+                Console.WriteLine("10. Linked List Queue");
                 Console.WriteLine("Enter The Number");
                 int num = Convert.ToInt32(Console.ReadLine());
               
@@ -84,7 +86,15 @@ namespace LinkList
                         Console.WriteLine("...................");
                         linkliststack.Display();
                         break;
-
+                    case 10:
+                        linklistqueue.Enqueue(20);
+                        linklistqueue.Enqueue(30);
+                        linklistqueue.Enqueue(40);   
+                        Console.WriteLine("...................");
+                        linklistqueue.Dequeue();
+                        Console.WriteLine("...................");
+                        linklistqueue.Display();
+                        break;
                     default:
                         Console.WriteLine("Enter correct option");
                         break;

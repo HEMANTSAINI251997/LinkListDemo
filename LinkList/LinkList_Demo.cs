@@ -10,8 +10,8 @@ namespace LinkList
 {
     public class LinkList_Demo
     {
-        
-            public Node head;
+
+        public Node head = null;
         public void Add(int data)
         {
             Node node = new Node(data);
@@ -22,14 +22,14 @@ namespace LinkList
             else
             {
                 Node temp = head;
-                while(temp.next!= null)
+                while (temp.next != null)
                 {
                     temp = temp.next;
 
                 }
                 temp.next = node;
             }
-            Console.WriteLine("Link List data = " + data);
+            Console.WriteLine("Link List data = " + node.data);
         }
         public void Display()
         {
@@ -37,6 +37,7 @@ namespace LinkList
             if (temp == null)
             {
                 Console.WriteLine("List is Empty");
+                return;
             }
             while(temp != null) 
             {
@@ -109,19 +110,19 @@ namespace LinkList
         }
         public int Search(int value)
         {
-            Node node = head;
-            if (node == null)
+            Node temp = head;
+            if (temp == null)
             {
                 return -1;
             }
             int count = 0;
-            while (node != null)
+            while (temp != null)
             {
-                if (node.data == value)
+                if (temp.data == value)
                 {
                     return count;
                 }
-                node = node.next;
+                temp = temp.next;
                 count++;
             }
             return count;
